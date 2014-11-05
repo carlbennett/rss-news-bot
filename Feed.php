@@ -34,7 +34,6 @@ class Feed implements Updateable {
       $xml = new \SimpleXMLElement($this->last_response->data);
       if (libxml_get_errors()) throw new \Exception();
     } catch (\Exception $e) {
-      throw $e;
       return false;
     }
     if (!$xml) return false;
@@ -47,7 +46,6 @@ class Feed implements Updateable {
         $new_articles[] = $article;
       }
     } catch (\Exception $e) {
-      throw $e;
       return false;
     }
     return $new_articles;
