@@ -22,14 +22,6 @@ class Article {
     return false;
   }
 
-  public function getHash() {
-    return hash("sha256",
-      $this->title .
-      $this->description .
-      $this->link
-    );
-  }
-
   public function matchKeyword($keyword) {
     if (stripos($this->title, $keyword) !== false) return true;
     if (stripos($this->description, $keyword) !== false) return true;
