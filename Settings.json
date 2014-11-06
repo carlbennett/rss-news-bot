@@ -21,6 +21,22 @@
       "url": "http://www.forbes.com/real-time/feed2/"
     },
     {
+      "label": "Reuters Top News",
+      "url": "http://feeds.reuters.com/reuters/topNews"
+    },
+    {
+      "label": "Reuters World News",
+      "url": "http://feeds.reuters.com/Reuters/worldNews"
+    },
+    {
+      "label": "Reuters U.S. News",
+      "url": "http://feeds.reuters.com/Reuters/domesticNews"
+    },
+    {
+      "label": "The Free Thought Project",
+      "url": "http://thefreethoughtproject.com/feed/"
+    },
+    {
       "label": "TeenVogue Featured",
       "url": "http://www.teenvogue.com/services/rss/feeds/composite.xml"
     },
