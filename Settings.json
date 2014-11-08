@@ -59,6 +59,10 @@
     {
       "label": "Reddit /r/security",
       "url": "https://www.reddit.com/r/security/.rss"
+    },
+    {
+      "label": "TorrentFreak",
+      "url": "http://feeds.feedburner.com/Torrentfreak"
     }
   ],
   "messages": [
