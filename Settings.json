@@ -67,6 +67,14 @@
     {
       "label": "TechCrunch",
       "url": "http://feeds.feedburner.com/TechCrunch/"
+    },
+    {
+      "label": "Ars Technica Featured",
+      "url": "http://feeds.arstechnica.com/arstechnica/features"
+    },
+    {
+      "label": "Ars Technica As-it-happens",
+      "url": "http://feeds.arstechnica.com/arstechnica/index"
     }
   ],
   "messages": [
