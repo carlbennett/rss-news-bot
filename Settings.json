@@ -21,12 +21,28 @@
       "url": "http://rss.cnn.com/rss/cnn_world.rss"
     },
     {
+      "label": "Engadget",
+      "url": "http://www.engadget.com/rss.xml"
+    },
+    {
       "label": "Forbes Headlines",
       "url": "http://www.forbes.com/real-time/feed2/"
     },
     {
       "label": "Forbes Popular Stories",
       "url": "http://www.forbes.com/feeds/popstories.xml"
+    },
+    {
+      "label": "Gizmodo",
+      "url": "http://feeds.gawker.com/gizmodo/full"
+    },
+    {
+      "label": "Lifehacker",
+      "url": "http://feeds.gawker.com/lifehacker/full"
+    },
+    {
+      "label": "Mashable",
+      "url": "http://feeds.mashable.com/Mashable"
     },
     {
       "label": "Reuters Top News",
