@@ -33,6 +33,7 @@ class HipChatService extends Service {
   public function prepareMessage(Article &$article) {
     $definition = $this->getMessageDefinition();
     if (is_null($definition)) return false;
+    
     $message                 = new Message();
     $message->color          = $definition->color;
     $message->message_format = $definition->format[0];
