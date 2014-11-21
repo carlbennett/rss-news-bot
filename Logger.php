@@ -19,10 +19,6 @@ class Logger {
     $this->hStdOut = fopen("php://stdout", "w");
   }
 
-  public function rotateLogs() {
-    $this->writeLine("rotateLogs()");
-  }
-
   public function write($text, $timestamp = true) {
     if (!is_resource($this->hStdOut)) $this->open();
     $bytes_written = 0;
