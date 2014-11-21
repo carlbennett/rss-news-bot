@@ -14,15 +14,6 @@ function main($argc, $argv) {
     require_once("./" . str_replace("\\", "/", substr($className, 8)) . ".php");
   });
 
-  pcntl_signal(SIGINT, function($signo){
-    Common::$exit = SIGINT;
-    Common::$logger->writeLine("\033[0;31mShutting down...\033[0;0m");
-  });
-
-  pcntl_signal(SIGUSR1, function($signo){
-    Common::$logger->rotateLogs();
-  });
-
   system("stty -echo");
 
   register_shutdown_function(function(){
@@ -51,9 +42,6 @@ function main($argc, $argv) {
   do {
     Common::$updater->poll();
     sleep(1);
-    if (!pcntl_signal_dispatch()) {
-      throw new \Exception("Signal dispatch failed");
-    }
   } while (Common::$exit == 0);
 
   return Common::$exit;
