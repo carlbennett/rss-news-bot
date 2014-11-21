@@ -26,6 +26,17 @@ abstract class Service {
     return $this->class;
   }
 
+  public function getMessageDefinition() {
+    $definition = null;
+    foreach (Common::$settings->messages as $definition_iterator) {
+      if ($definition_iterator->id == $this->message_id) {
+        $definition = $definition_iterator;
+        break;
+      }
+    }
+    return $definition;
+  }
+
   public function matchKeywords(&$article) {
     foreach ($this->keywords as $keyword) {
       if ($article->matchKeyword($keyword)) return true;
