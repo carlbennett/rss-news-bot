@@ -123,5 +123,5 @@
     }
   ],
   "timezone": "America/Chicago",
-  "update_interval": 300
+  "update_interval": 600
 }
