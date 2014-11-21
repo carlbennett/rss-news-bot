@@ -25,7 +25,7 @@ class HipChatService extends Service {
 
   protected function getUrl() {
     return "https://api.hipchat.com/v2/room/"
-      . $this->room_id
+      . urlencode($this->room_id)
       . "/notification?auth_token="
       . urlencode($this->api_token);
   }
