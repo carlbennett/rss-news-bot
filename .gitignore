@@ -1,1 +1,15 @@
+# Ignore Macintosh shit
+.DS_Store
+.Trashes
+
+# Ignore Windows shit
+Thumbs.db
+
+# Ignore vim swap files
+*.swp
+
+# Ignore vim session files
+*.vim
+
+# Ignore settings file
 /Settings.json
