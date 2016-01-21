@@ -51,6 +51,10 @@ class Common {
       curl_setopt($curl, CURLOPT_POST, true);
       curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($post_content));
       curl_setopt($curl, CURLOPT_HTTPHEADER, ["Content-Type: application/json;charset=utf-8"]);
+    } else if (is_string($post_content)) {
+      curl_setopt($curl, CURLOPT_POST, true);
+      curl_setopt($curl, CURLOPT_POSTFIELDS, $post_content);
+      curl_setopt($curl, CURLOPT_HTTPHEADER, ["Content-Type: application/x-www-form-urlencoded"]);
     }
 
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -66,6 +70,7 @@ class Common {
   }
 
   public static function dispatchService(&$new_articles) {
+    Common::$logger->writeLine("\033[0;33mDispatching services...\033[0;0m");
     foreach (self::$services as $service) {
       $service->dispatch($new_articles);
     }
