@@ -1,0 +1,33 @@
+[
+  {
+    "class": "HipChatService",
+    "label": "My HipChat Integration",
+    "active": false,
+    "message_id": 0,
+    "api_token": "abcxyz",
+    "room_id": 123456,
+    "keywords": [
+      "photo",
+      "pic",
+      "video"
+    ],
+    "filter_by_keywords": true,
+    "filter_by_top_article": false
+  },
+  {
+    "class": "SlackService",
+    "label": "My Slack Integration",
+    "active": true,
+    "message_id": 1,
+    "subdomain": "myslacksubdomain",
+    "api_token": "abcxyz",
+    "channel": "#general",
+    "keywords": [
+      "photo",
+      "pic",
+      "video"
+    ],
+    "filter_by_keywords": false,
+    "filter_by_top_article": true
+  }
+]

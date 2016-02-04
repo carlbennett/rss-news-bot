@@ -1,0 +1,17 @@
+[
+  {
+    "color": "random",
+    "date_format": "m/d/Y g:i:s A T",
+    "format": [
+      "html",
+      "<b>{feed.label}:</b> <a href=\"{article.link}\">{article.title}</a>"
+    ],
+    "label": "HipChat",
+    "notify": false
+  },
+  {
+    "date_format": "m/d/Y g:i:s A T",
+    "format": "*{feed.label}:* {article.title} {article.link}",
+    "label": "Slack"
+  }
+]

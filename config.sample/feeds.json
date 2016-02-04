@@ -1,0 +1,94 @@
+[
+  {
+    "label": "Ars Technica As-it-happens",
+    "url": "http://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+    "label": "Ars Technica Featured",
+    "url": "http://feeds.arstechnica.com/arstechnica/features"
+  },
+  {
+    "label": "CNN Top Stories",
+    "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
+  },
+  {
+    "label": "CNN U.S.",
+    "url": "http://rss.cnn.com/rss/cnn_us.rss"
+  },
+  {
+    "label": "CNN World",
+    "url": "http://rss.cnn.com/rss/cnn_world.rss"
+  },
+  {
+    "label": "Engadget",
+    "url": "http://www.engadget.com/rss.xml"
+  },
+  {
+    "label": "Forbes Headlines",
+    "url": "http://www.forbes.com/real-time/feed2/"
+  },
+  {
+    "label": "Forbes Popular Stories",
+    "url": "http://www.forbes.com/feeds/popstories.xml"
+  },
+  {
+    "label": "Gizmodo",
+    "url": "http://feeds.gawker.com/gizmodo/full"
+  },
+  {
+    "label": "Lifehacker",
+    "url": "http://feeds.gawker.com/lifehacker/full"
+  },
+  {
+    "label": "Mashable",
+    "url": "http://feeds.mashable.com/Mashable"
+  },
+  {
+    "label": "Reuters Top News",
+    "url": "http://feeds.reuters.com/reuters/topNews"
+  },
+  {
+    "label": "Reuters U.S. News",
+    "url": "http://feeds.reuters.com/Reuters/domesticNews"
+  },
+  {
+    "label": "Reuters World News",
+    "url": "http://feeds.reuters.com/Reuters/worldNews"
+  },
+  {
+    "label": "The Free Thought Project",
+    "url": "http://thefreethoughtproject.com/feed/"
+  },
+  {
+    "label": "Frontpage of Reddit",
+    "url": "https://www.reddit.com/.rss"
+  },
+  {
+    "label": "Reddit /r/news",
+    "url": "https://www.reddit.com/r/news/.rss"
+  },
+  {
+    "label": "Reddit /r/worldnews",
+    "url": "https://www.reddit.com/r/worldnews/.rss"
+  },
+  {
+    "label": "Reddit /r/dallas",
+    "url": "https://www.reddit.com/r/dallas/.rss"
+  },
+  {
+    "label": "Reddit /r/security",
+    "url": "https://www.reddit.com/r/security/.rss"
+  },
+  {
+    "label": "TechCrunch",
+    "url": "http://feeds.feedburner.com/TechCrunch/"
+  },
+  {
+    "label": "TeenVogue Featured",
+    "url": "http://www.teenvogue.com/services/rss/feeds/composite.xml"
+  },
+  {
+    "label": "TorrentFreak",
+    "url": "http://feeds.feedburner.com/Torrentfreak"
+  }
+]
