@@ -39,11 +39,26 @@ class Feed implements Updateable {
     if (!$xml) return false;
     $new_articles = [];
     try {
-      foreach ($xml->channel->item as $item) {
-        $article = new Article($this, $item);
-        if (Common::findArticle($article)) continue;
-        Common::$articles->attach($article);
-        $new_articles[] = $article;
+      if (isset($xml->channel)) {
+        /* Standard RSS Feed */
+        foreach ($xml->channel->item as $item) {
+          $article = new Article($this, $item);
+          if (Common::findArticle($article)) continue;
+          Common::$articles->attach($article);
+          $new_articles[] = $article;
+        }
+      } else if (isset($xml->entry)) {
+        /* Non-standard RSS Feed */
+        /* Reddit is currently known to use this format */
+        foreach ($xml->entry as $item) {
+          $article = new Article($this, $item);
+          if (Common::findArticle($article)) continue;
+          Common::$articles->attach($article);
+          $new_articles[] = $article;
+        }
+      } else {
+        /* Something's mucked up */
+        throw new \DomainException("Unable to parse feed");
       }
     } catch (\Exception $e) {
       return false;
