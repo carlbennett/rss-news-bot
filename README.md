@@ -24,7 +24,7 @@ script, you could run it by using the Systemd service unit file.
 
 1. Copy the ```/rss-news-bot.service```
    to ```/etc/systemd/system/rss-news-bot.service```.
-2. Run ```sudo systemctl daemon-reload``` to make it aware of the new unit.
-3. Copy the bot to ```/opt/rss-news-bot/``` or modify the Systemd unit file.
+2. Copy the bot to ```/opt/rss-news-bot/``` or modify the Systemd unit file.
+3. Run ```sudo systemctl daemon-reload``` to make it aware of the new unit.
 4. Run ```sudo systemctl start rss-news-bot.service``` to run the bot.
 5. Run ```sudo systemctl enable rss-news-bot.service``` to have it run at boot.
