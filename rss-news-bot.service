@@ -1,0 +1,16 @@
+[Unit]
+Description=RSS News Bot
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/rss-news-bot/
+User=nobody
+Group=nobody
+Type=simple
+ExecStart=/usr/bin/php -d 'newrelic.appname="RSSNewsBot"'-f /opt/rss-news-bot/main.php
+PrivateTmp=true
+RestartSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
